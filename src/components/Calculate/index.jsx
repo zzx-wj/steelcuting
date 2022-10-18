@@ -120,13 +120,13 @@ const Index = (props) => {
           <Card>
             <Statistic
               title="90°划线"
-              value={result.scribing90 ? result.scribing90 + '米' : '--'}
+              value={result.scribing90}
               precision={4}
               valueStyle={{
                 color: '#cf1322',
               }}
               // prefix={<ArrowUpOutlined />}
-              suffix=""
+              suffix="米"
             />
           </Card>
         </Col>
@@ -134,13 +134,13 @@ const Index = (props) => {
           <Card>
             <Statistic
               title="斜面划线"
-              value={result.bevelScribing ? result.bevelScribing + '米' : "--"}
+              value={result.bevelScribing}
               precision={4}
               valueStyle={{
                 color: '#cf1322',
               }}
               // prefix={<ArrowDownOutlined />}
-              suffix=""
+              suffix="米"
             />
           </Card>
         </Col>
@@ -148,13 +148,13 @@ const Index = (props) => {
           <Card>
             <Statistic
               title="高度划线"
-              value={result.heightScribing ? result.heightScribing + '米' : '--'}
+              value={result.heightScribing}
               precision={4}
               valueStyle={{
                 color: '#cf1322',
               }}
               // prefix={<ArrowDownOutlined />}
-              suffix=""
+              suffix="米"
             />
           </Card>
         </Col>
