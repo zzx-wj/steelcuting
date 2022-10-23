@@ -9,9 +9,10 @@ const Index = () => {
     return {
       label: item.name,
       key: item.key,
-      children: <Calculate title={item.name} opt={item.opt} />,
+      children: <Calculate title={item.title} opt={item.opt} inputs={item.inputs} outputs={item.outputs} />,
     }
   })
+
   return (
     <div>
       <Tabs
