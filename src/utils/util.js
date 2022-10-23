@@ -5,7 +5,6 @@ export const steelArr = [
   height：高
   thickness：厚度
   bottom：底平面
-
   输出值：
   sb90：90°划线
   rightSb：直面划线
@@ -115,7 +114,7 @@ export const steelArr = [
     opt: ({ width, height, thickness }) => {
       const sb90 = (width - thickness * 2) / 2;
       const bevelSb = ((width - thickness * 2) / 2) * 1.18;
-      const heightSb = bevelSb / 2 + (thickness * 2 - 2) - height;
+      const heightSb = Math.abs(bevelSb / 2 + (thickness * 2 - 2) - height);
       const total = sb90 * 2 + heightSb * 2 + bevelSb * 2;
       return {
         sb90,
